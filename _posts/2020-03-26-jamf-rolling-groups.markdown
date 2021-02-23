@@ -3,7 +3,7 @@ layout: post
 title: Jamf Rolling Update Groups
 date: 2020-03-26 13:16:39 -0500
 tags: [Jamf, Updates, Bash]
-image: '/images/902.jpg'
+image: '/images/cover29.jpg'
 description: Creating a rolling (phased) update process similar to SCCM
 ---
 **Coming Soon!**

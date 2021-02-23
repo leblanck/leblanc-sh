@@ -3,14 +3,16 @@ layout: post
 title: Building Pinwheel with Hugo and Firebase
 date: 2019-05-08 22:11:32 -0500
 tags: [Hugo, Firebase, Development]
-image: '/images/bg00.jpg'
+image: '/images/cover5.jpg'
 description: Building Pinwheel with Hugo and Firebase
 featured: true
 ---
 
 ![Hugo & Firebase](/images/hugo-firebase.png)
 
-The website you are reading right now* was brought to you with the help of [Hugo](https://gohugo.io/) and [Firebase](https://firebase.google.com/). This combination of tools has allowed me to spin up a live website faster than I ever have before; < 1 hour to a live skeleton site. The free tier of Firebase made it really quick and easy to just pick up and get going, and since it is made by Google, I didn't even need to create a second account.
+_**NOTE:**_ **Update on 2/23/2020:** This post has been migrated from an old blog (Pinwheel.dev). This current blog is now built using Netlify and Jekyll. A post about this will be coming soon. 
+
+The website you are reading right now was brought to you with the help of [Hugo](https://gohugo.io/) and [Firebase](https://firebase.google.com/). This combination of tools has allowed me to spin up a live website faster than I ever have before; < 1 hour to a live skeleton site. The free tier of Firebase made it really quick and easy to just pick up and get going, and since it is made by Google, I didn't even need to create a second account.
 
 Hugo makes it *insanely* easy to do dev work on this site by providing some great build tools, live preview, smooth error handling, etc. I really can't recommend them enough for doing some fast static web development. No, I wasn't paid to say this, although I wish I was, but I just really enjoyed using their platform. Okay, enough of that talk - let's get into it!
 

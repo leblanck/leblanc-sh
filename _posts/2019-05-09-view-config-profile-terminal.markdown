@@ -3,8 +3,8 @@ layout: post
 title: Viewing Configuration Profiles in Terminal
 date: 2019-05-09 08:43:21 -0500
 tags: [Jamf, Bash, Terminal, Configuration-Profiles]
-image: '/images/611.jpg'
-description: Viewing Configuration Profiles in Terminal
+image: '/images/cover21.jpg'
+description: Printing Config Profiles in a Readable Way
 ---
 
 Often times I find myself wanting to view a print out of currently installed configuration profiles on a machine, but either can't or don't want to use the GUI. This would normally consist of going to `System Preferences > Profiles` to view a list of all profiles installed.

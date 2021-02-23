@@ -3,7 +3,7 @@ layout: post
 title: Automating New Web Dev Environments
 date: 2019-06-12 12:23:44 -0500
 tags: [Automation, Bash, Homebrew]
-image: '/images/609.jpg'
+image: '/images/cover9.jpg'
 description: Automating Environment Setups
 featured: true
 ---
