@@ -2,7 +2,8 @@
 layout: post
 title: Building Pinwheel with Hugo and Firebase
 date: 2019-05-08 22:11:32 -0500
-tags: Hugo Firebase Development
+tags: [Hugo, Firebase, Development]
+image:  '/images/110.jpg'
 description: Building Pinwheel with Hugo and Firebase
 ---
 
@@ -24,12 +25,12 @@ Pinwheel is currently using a modified version of the [Cocoa-Enhanced](https://g
 
 Your `config.toml` file really becomes the heart of your site. This is where you actually direct Hugo to which theme you are using as well as set global configs for your site (author, desciption, etc)
 
-```toml
+{% highlight toml %} 
 baseURL = "https://example.org/"
 languageCode = "en-us"
 title = "My New Hugo Site"
 theme = "ananke"
-```
+{% endhighlight %} 
 
 **Page Creation**
 
@@ -42,7 +43,7 @@ Creating new pages in Hugo is pretty intuitive: `hugo new blog/blog-title.md`. T
 
 One of my favorite things about Hugo, being that it creates static websites, is that you can spin up a local instance to serve your site using `hugo server`. (Running just `hugo` publishes your site to your specified `publishdir` in your `config.toml` file). This loads your site at `localhost:1313` and any changes made to your site are auto-refreshed at that location.
 
-```bash
+{% highlight bash %} 
 Watching for changes in /Users/username/pinwheel/{content,data,layouts,static,themes}
 Watching for config changes in /Users/username/pinwheel/config.toml
 Environment: "development"
@@ -50,12 +51,13 @@ Serving pages from memory
 Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
 Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
 Press Ctrl+C to stop
-```
+{% endhighlight %} 
+
 ![Hugo & Firebase](/images/localhost.png)
 
 Once all of the dev work is done and I'm happy with where Pinwheel is at, I can compile/build the Hugo site and deploy up to Firebase with nice one-liner from the root of my hugo dir: `hugo && firebase deploy` which will provide the following output when successful -
 
-```bash
+{% highlight bash %} 
 | EN  
 +------------------+----+
 Pages            | 14  
@@ -84,7 +86,8 @@ i  hosting[pinwheel-7f284]: releasing new version...
 
 Project Console: https://console.firebase.google.com/project/pinwheel-7f284/overview
 Hosting URL: https://pinwheel-7f284.firebaseapp.com
-```
+{% endhighlight %} 
+
 **Firebase Console**
 
 The Firebase console has some pretty handy GUI features, all of which I'm sure are available via cl but I haven't done that much digging. Firebase can do a lot, but I'm only using the Hosting portion and the dashboard for that is simple but convenient. It shows a helpful deploy history as well as basic domain settings. They make adding a custom domain front and center which was a blessing to not need to dig in menus for that.
