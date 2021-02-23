@@ -2,7 +2,7 @@
 layout: post
 title: Active Directory Domain Migration on macOS
 date: 2019-05-03 12:23:44 -0500
-categories: [macOS, Jamf, AD]
+tags: [macOS, Jamf, AD]
 image:  '/images/110.jpg'
 description: Migrating AD domains on macOS
 ---
