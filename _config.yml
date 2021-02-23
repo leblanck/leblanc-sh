@@ -11,7 +11,7 @@ url: "https://leblanc.sh" # The base hostname & protocol for your site, e.g. htt
 # Author Settings
 author:
   name: Kyle LeBlanc
-  avatar: '/images/15.jpg'
+  avatar: '/images/avatar.jpg'
 
 
 #-------------------------------
@@ -49,7 +49,7 @@ social:
 
 #-------------------------------
 # Comment Section (Disqus)
-disqus-identifier: anvodstudio-demo # Add your shortname for Disqus Comment. For example anvodstudio-demo
+#disqus-identifier: anvodstudio-demo # Add your shortname for Disqus Comment. For example anvodstudio-demo
 
 
 #-------------------------------
