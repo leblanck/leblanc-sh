@@ -6,7 +6,7 @@ tags: Hugo Firebase Development
 description: Building Pinwheel with Hugo and Firebase
 ---
 
-![Hugo & Firebase](/assets/hugo-firebase.png)
+![Hugo & Firebase](/images/hugo-firebase.png)
 
 The website you are reading right now* was brought to you with the help of [Hugo](https://gohugo.io/) and [Firebase](https://firebase.google.com/). This combination of tools has allowed me to spin up a live website faster than I ever have before; < 1 hour to a live skeleton site. The free tier of Firebase made it really quick and easy to just pick up and get going, and since it is made by Google, I didn't even need to create a second account.
 
@@ -51,7 +51,7 @@ Running in Fast Render Mode. For full rebuilds on change: hugo server --disableF
 Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
 Press Ctrl+C to stop
 ```
-![Hugo & Firebase](/assets/localhost.png)
+![Hugo & Firebase](/images/localhost.png)
 
 Once all of the dev work is done and I'm happy with where Pinwheel is at, I can compile/build the Hugo site and deploy up to Firebase with nice one-liner from the root of my hugo dir: `hugo && firebase deploy` which will provide the following output when successful -
 
@@ -89,7 +89,7 @@ Hosting URL: https://pinwheel-7f284.firebaseapp.com
 
 The Firebase console has some pretty handy GUI features, all of which I'm sure are available via cl but I haven't done that much digging. Firebase can do a lot, but I'm only using the Hosting portion and the dashboard for that is simple but convenient. It shows a helpful deploy history as well as basic domain settings. They make adding a custom domain front and center which was a blessing to not need to dig in menus for that.
 
-![Firebase Console](/assets/firebase-console.png)
+![Firebase Console](/images/firebase-console.png)
 
 *Resources*
 
