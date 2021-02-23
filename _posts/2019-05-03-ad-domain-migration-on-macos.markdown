@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Active Directory Domain Migration on macOS"
+title: Active Directory Domain Migration on macOS
 date: 2019-05-03 12:23:44 -0500
-categories: macOS Jamf AD
-description: "Migrating AD domains on macOS"
-author: "Kyle LeBlanc"
+categories: [macOS, Jamf, AD]
+image:  '/images/110.jpg'
+description: Migrating AD domains on macOS
 ---
 
 Joining Windows machines to an AD domain is easy, intuitive, and downright simple. The same can't really be said for machines running macOS. The task of binding these devices to the same AD world that your Windows machines are on can be tricky and cumbersome, but this is becoming all the more common as macOS is taking up a larger seat in the enterprise/corporate world.
@@ -19,7 +19,7 @@ First, here is a little background on the environment in which this was done. Al
 
 I never like to surprise any user that I am working with, let alone with a delicate task like this at hand. The first part of my script was to alert the user that this process was beginning. This was done using the pre-installed Jamf Helper that is installed with enrollment to the JSS. This provided a nice alert (company branding included) that the user could trust and know it was from IT. Once that was done it was time to dig into the fun stuff.
 
-![User Notification](/assets/usernotif.png)
+![User Notification](/images/usernotif.png)
 
 I created a log file in `/Library/Logs/` to keep tabs in case anything had gone wrong. This was invaluable when troubleshooting with test machines and making sure the process was locked down as well as if there were any hiccups when deploying this on production machines.
 

@@ -1,10 +1,9 @@
 ---
 layout: post
-title: "Building Pinwheel with Hugo and Firebase"
+title: Building Pinwheel with Hugo and Firebase
 date: 2019-05-08 22:11:32 -0500
 tags: Hugo Firebase Development
-description: "Building Pinwheel with Hugo and Firebase"
-author: "Kyle LeBlanc"
+description: Building Pinwheel with Hugo and Firebase
 ---
 
 ![Hugo & Firebase](/assets/hugo-firebase.png)
