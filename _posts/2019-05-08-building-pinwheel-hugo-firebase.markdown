@@ -26,7 +26,7 @@ Pinwheel is currently using a modified version of the [Cocoa-Enhanced](https://g
 
 Your `config.toml` file really becomes the heart of your site. This is where you actually direct Hugo to which theme you are using as well as set global configs for your site (author, desciption, etc)
 
-{% highlight toml %} 
+{% highlight yaml %} 
 baseURL = "https://example.org/"
 languageCode = "en-us"
 title = "My New Hugo Site"

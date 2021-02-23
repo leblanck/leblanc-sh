@@ -27,10 +27,7 @@ hero:
 contact:
   email: kyle@leblanc.sh # Add your email for contact form
   description: Let's Chat! # Add a description of your form
-
-# NOTE
-# Norlin theme comes with a contact form built-in. You can use this form with Formspree (https://formspree.io/) service and get up to 50 submissions for free. Also, you can easily switch to another service if you want.
-
+  formspreeid: mnqoyelw
 
 #-------------------------------
 # Footer section
