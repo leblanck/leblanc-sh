@@ -3,7 +3,7 @@ layout: post
 title: 2021 EDC
 date: 2021-03-03 09:13:56 -0500
 tags: [EDC, Everyday-Carry]
-image:  '/images/cover33.jpg'
+image:  '/images/cover34.jpg'
 description: My updated EDC for 2021
 featured: true
 ---
@@ -28,7 +28,7 @@ when I am heading out for the day and plan to be out for an extended period of t
   <div class="gallery-box">
     <div class="gallery">
       <img src="/images/cover33.jpg">
-      <img src="/images/cover33.jpg">
+      <img src="/images/cover34.jpg">
       <img src="/images/cover33.jpg">
     </div>
   </div>
