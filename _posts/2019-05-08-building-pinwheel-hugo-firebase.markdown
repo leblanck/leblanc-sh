@@ -5,7 +5,6 @@ date: 2019-05-08 22:11:32 -0500
 tags: [Hugo, Firebase, Development]
 image: '/images/cover5.jpg'
 description: Building Pinwheel with Hugo and Firebase
-featured: true
 ---
 
 ![Hugo & Firebase](/images/hugo-firebase.png)
@@ -16,7 +15,7 @@ The website you are reading right now was brought to you with the help of [Hugo]
 
 Hugo makes it *insanely* easy to do dev work on this site by providing some great build tools, live preview, smooth error handling, etc. I really can't recommend them enough for doing some fast static web development. No, I wasn't paid to say this, although I wish I was, but I just really enjoyed using their platform. Okay, enough of that talk - let's get into it!
 
-**Install & Set Up**
+### Install & Set Up
 
 Installing Hugo is a breeze - `brew install hugo` (If you don't already use Homebrew or know how much I love it myself, see my [previous post](/blog/automating-new-web-dev-environments/))
 
@@ -35,14 +34,14 @@ title = "My New Hugo Site"
 theme = "ananke"
 {% endhighlight %} 
 
-**Page Creation**
+### Page Creation
 
 Creating new pages in Hugo is pretty intuitive: `hugo new blog/blog-title.md`. This will spin up a markdown page in the blog directory which you can open and edit with your favorite text editor: `cd blog && atom blog-title.md` - I had to brush up on my markdown skills ([this helped](https://guides.github.com/features/mastering-markdown/)) but once I shook the dust off, creating new posts was really fast.
 
 
 
 
-**Build & Publish**
+### Build & Publish
 
 One of my favorite things about Hugo, being that it creates static websites, is that you can spin up a local instance to serve your site using `hugo server`. (Running just `hugo` publishes your site to your specified `publishdir` in your `config.toml` file). This loads your site at `localhost:1313` and any changes made to your site are auto-refreshed at that location.
 
@@ -91,7 +90,7 @@ Project Console: https://console.firebase.google.com/project/pinwheel-7f284/over
 Hosting URL: https://pinwheel-7f284.firebaseapp.com
 {% endhighlight %} 
 
-**Firebase Console**
+### Firebase Console
 
 The Firebase console has some pretty handy GUI features, all of which I'm sure are available via cl but I haven't done that much digging. Firebase can do a lot, but I'm only using the Hosting portion and the dashboard for that is simple but convenient. It shows a helpful deploy history as well as basic domain settings. They make adding a custom domain front and center which was a blessing to not need to dig in menus for that.
 
