@@ -27,7 +27,7 @@ I fully understand that macOS is a second-class citizen when it comes to softwar
 
 ![iCUE Install Error](/images/screenshots/corsair_error.png)
 
-To get iCUE to work correctly I had to uninstall iCUE, reboot, re-install and re-connect my headset before it began working correcting in macOS and iCUE. Maybe this is a bug with Big Sur, or maybe it isn't. I tried this on 2 different Macbooks, both running Big Sur and the experience was exactly the same on both machines. 
+To get iCUE to work correctly I had to uninstall iCUE, reboot, re-install and re-connect my headset before it began working correctly in macOS and iCUE. Maybe this is a bug with Big Sur, or maybe it isn't. I tried this on 2 different Macbooks, both running Big Sur and the experience was exactly the same on both machines. 
 
 I already had this software installed on my PC so going through a full install was not necessary on that side. 
 
@@ -48,7 +48,7 @@ As we all know style is a very subjective thing, and I will vote that these are 
 
 ### Comfort
 
-This is really the achilles heel of this headset. Compared to my Razer Kraken these are much less comfortable. After ~1 hour of using the Virtuoso's I can certainly notice they are on my head. These are noticeably heavier than the Kraken's but that is a fair trade-off for going wireless. The biggest gripe I have with the comfort on these are the ear cups. I with they were a little bit deeper, the Krakens win here as well with a nice and deep ear cup. The sides of my ear touch the inside of the ear piece causing some slight irratation after using them for an extended period of time. 
+This is really the achilles heel of this headset and why I gave it an 8/10 instead of a 9 or even a full 10. Compared to my Razer Kraken these are much less comfortable. After ~1 hour of using the Virtuoso's I can certainly notice they are on my head. These are noticeably heavier than the Kraken's but that is a fair trade-off for going wireless. The biggest gripe I have with the comfort on these are the ear cups. I with they were a little bit deeper, the Krakens win here as well with a nice and deep ear cup. The sides of my ear touch the inside of the ear piece causing some slight irratation after using them for an extended period of time. 
 
 ### Sound/Mic Quality
 
