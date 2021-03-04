@@ -27,9 +27,9 @@ when I am heading out for the day and plan to be out for an extended period of t
 
   <div class="gallery-box">
     <div class="gallery">
-      <img src="/images/cover33.jpg">
-      <img src="/images/cover34.jpg">
-      <img src="/images/cover33.jpg">
+      <img src="/images/covers/cover33.jpg">
+      <img src="/images/covers/cover34.jpg">
+      <img src="/images/covers/cover33.jpg">
     </div>
   </div>
 
@@ -48,8 +48,8 @@ when I am heading out for the day and plan to be out for an extended period of t
 
   <div class="gallery-box">
     <div class="gallery">
-      <img src="/images/cover33.jpg">
-      <img src="/images/cover33.jpg">
-      <img src="/images/cover33.jpg">
+      <img src="/images/covers/cover33.jpg">
+      <img src="/images/covers/cover33.jpg">
+      <img src="/images/covers/cover33.jpg">
     </div>
   </div>
