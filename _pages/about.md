@@ -7,7 +7,7 @@ image: '/images/me.JPG'
 
 Hi, my name is Kyle LeBlanc! 
 
-I am a Senior Engineer from New England. I have been in IT professionally since 2010, built my first PC in 2008, and vividly remember the first time I went to Google and learning to double-click on an old square track-ball mouse in 1990-something. 
+I am a Senior Mac System Engineer from New England. I have been in IT professionally since 2010, built my first PC in 2008, and vividly remember the first time I went to Google and learning to double-click on an old square track-ball mouse in 1990-something. 
 
 This blog is intended to serve as a place to share my findings, research, thoughts, and expirements with all (most) things technical. I primarily focus on macOS, Jamf, Enterprise IT, and PC Building. Just becuase these are my primary focuses, does not mean I won't post about other things as well - I'm trying to not put myself into a subject box. 
 
