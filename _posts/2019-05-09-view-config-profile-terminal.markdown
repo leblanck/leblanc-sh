@@ -3,7 +3,7 @@ layout: post
 title: Viewing Configuration Profiles in Terminal
 date: 2019-05-09 08:43:21 -0500
 tags: [Jamf, Bash, Terminal, Configuration-Profiles]
-image: '/images/cover21.jpg'
+image: '/images/covers/cover21.jpg'
 description: Printing Config Profiles in a Readable Way
 ---
 

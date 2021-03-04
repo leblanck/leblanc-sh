@@ -3,11 +3,11 @@ layout: post
 title: Building Pinwheel with Hugo and Firebase
 date: 2019-05-08 22:11:32 -0500
 tags: [Hugo, Firebase, Development]
-image: '/images/cover5.jpg'
+image: '/images/covers/cover5.jpg'
 description: Building Pinwheel with Hugo and Firebase
 ---
 
-![Hugo & Firebase](/images/hugo-firebase.png)
+![Hugo & Firebase](/images/screenshots/hugo-firebase.png)
 
 _**NOTE:**_ **Update on 2/23/2020:** This post has been migrated from an old blog (Pinwheel.dev). This current blog is now built using Netlify and Jekyll. A post about this will be coming soon. 
 
@@ -55,7 +55,7 @@ Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
 Press Ctrl+C to stop
 {% endhighlight %} 
 
-![Hugo & Firebase](/images/localhost.png)
+![Hugo & Firebase](/images/screenshots/localhost.png)
 
 Once all of the dev work is done and I'm happy with where Pinwheel is at, I can compile/build the Hugo site and deploy up to Firebase with nice one-liner from the root of my hugo dir: `hugo && firebase deploy` which will provide the following output when successful -
 
@@ -94,7 +94,7 @@ Hosting URL: https://pinwheel-7f284.firebaseapp.com
 
 The Firebase console has some pretty handy GUI features, all of which I'm sure are available via cl but I haven't done that much digging. Firebase can do a lot, but I'm only using the Hosting portion and the dashboard for that is simple but convenient. It shows a helpful deploy history as well as basic domain settings. They make adding a custom domain front and center which was a blessing to not need to dig in menus for that.
 
-![Firebase Console](/images/firebase-console.png)
+![Firebase Console](/images/screenshots/firebase-console.png)
 
 *Resources*
 

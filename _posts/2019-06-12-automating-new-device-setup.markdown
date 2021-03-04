@@ -3,7 +3,7 @@ layout: post
 title: Automating New Web Dev Environments
 date: 2019-06-12 12:23:44 -0500
 tags: [Automation, Bash, Homebrew]
-image: '/images/cover9.jpg'
+image: '/images/covers/cover9.jpg'
 description: Automating Environment Setups
 featured: true
 ---
@@ -12,7 +12,7 @@ featured: true
 
 No one wants to hear those words come from IT. *Especially* developers. I've had to deliver this news more times than I can count from users destroying their own machines either from messing with permissions, malware, or just from updates gone wrong.
 
-![Yes, I did really get this Slack message](/images/undo.png)
+![Yes, I did really get this Slack message](/images/screenshots/undo.png)
 
 I've done my best to help alleviate some of this pain from the dev crowd by assisting in automating their environment setup on a net-new machine.
 
@@ -113,4 +113,4 @@ localMacOSSetup() {
 {% endhighlight %} 
 
 The function above results in a desktop looking like this:
-![~Aesthic macOS Desktop~](/images/desktop.png)
+![~Aesthic macOS Desktop~](/images/screenshots/desktop.png)

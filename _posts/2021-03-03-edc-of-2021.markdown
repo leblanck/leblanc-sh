@@ -3,7 +3,7 @@ layout: post
 title: 2021 EDC
 date: 2021-03-03 09:13:56 -0500
 tags: [EDC, Everyday-Carry]
-image:  '/images/cover34.jpg'
+image:  '/images/covers/cover34.jpg'
 description: My updated EDC for 2021
 featured: true
 ---

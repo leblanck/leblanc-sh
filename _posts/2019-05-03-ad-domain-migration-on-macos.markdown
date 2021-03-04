@@ -3,7 +3,7 @@ layout: post
 title: Active Directory Domain Migration on macOS
 date: 2019-05-03 12:23:44 -0500
 tags: [macOS, Jamf, AD]
-image:  '/images/cover23.jpg'
+image:  '/images/covers/cover23.jpg'
 description: Migrating AD domains on macOS
 featured: true
 ---
@@ -20,7 +20,7 @@ First, here is a little background on the environment in which this was done. Al
 
 I never like to surprise any user that I am working with, let alone with a delicate task like this at hand. The first part of my script was to alert the user that this process was beginning. This was done using the pre-installed Jamf Helper that is installed with enrollment to the JSS. This provided a nice alert (company branding included) that the user could trust and know it was from IT. Once that was done it was time to dig into the fun stuff.
 
-![User Notification]({{site.baseurl}}/images/usernotif.png)
+![User Notification]({{site.baseurl}}/images/screenshots/usernotif.png)
 *User Notification communicating what will begin happening*
 
 I created a log file in `/Library/Logs/` to keep tabs in case anything had gone wrong. This was invaluable when troubleshooting with test machines and making sure the process was locked down as well as if there were any hiccups when deploying this on production machines.
