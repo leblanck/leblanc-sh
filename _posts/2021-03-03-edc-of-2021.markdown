@@ -46,10 +46,10 @@ when I am heading out for the day and plan to be out for an extended period of t
 * Bear Edge Knife - Backup
 * VANQUEST PPM-Husky 2.0
 
-  <div class="gallery-box">
+  <!-- <div class="gallery-box">
     <div class="gallery">
       <img src="/images/covers/cover33.jpg">
       <img src="/images/covers/cover33.jpg">
       <img src="/images/covers/cover33.jpg">
     </div>
-  </div>
+  </div> -->
