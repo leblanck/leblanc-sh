@@ -13,6 +13,12 @@ featured: true
 ### TL;DR
 The [Corsair Virtuoso RGB Headset](https://www.corsair.com/us/en/Categories/Products/Gaming-Headsets/Wireless-Headsets/VIRTUOSO-RGB-WIRELESS-High-Fidelity-Gaming-Headset/p/CA-9011186-NA) is a really solid deal for an all-around wireless headset. It excels in gaming audio as it is advertised to but also works really well in standard work situations like Zoom calls and Teams meetings. The look is sublte enough that you don't need to be embarassed in video meetings. They are very versatile by allowing you to remove the microphone, and with multiple connection options they should cover many peoples needs throught the day. **Overall Rating: 8/10.**
 
+ <div class="gallery-box">
+    <div class="gallery">
+      <img src="/images/covers/cover36.jpg">
+    </div>
+  </div> 
+
 ### Intro
 
 I recently got fed up with getting tangled in the wire of my wired headset during a meeting. It had in-line volume control that I would always hit when trying to un-tangle and turn the volume to 0 causing me to miss conversation during meetings. My solution: get a wireless headset! I am switching from a Razer Kraken in Black to the Corsair Virtuoso RGB Wireless Headset in White. 
@@ -31,13 +37,6 @@ To get iCUE to work correctly I had to uninstall iCUE, reboot, re-install and re
 
 I already had this software installed on my PC so going through a full install was not necessary on that side. 
 
- <!-- <div class="gallery-box">
-    <div class="gallery">
-      <img src="/images/covers/cover33.jpg">
-      <img src="/images/covers/cover34.jpg">
-      <img src="/images/covers/cover33.jpg">
-    </div>
-  </div> -->
 
 ### Style
 
