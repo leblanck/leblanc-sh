@@ -29,7 +29,14 @@ when I am heading out for the day and plan to be out for an extended period of t
     <div class="gallery">
       <img src="/images/covers/cover33.jpg">
       <img src="/images/covers/cover34.jpg">
-      <img src="/images/covers/cover33.jpg">
+    </div>
+  </div>
+
+
+  <div class="gallery-box">
+    <div class="gallery">
+      <img src="/images/edc_1.jpg">
+      <img src="/images/edc_2.jpg">
     </div>
   </div>
 
