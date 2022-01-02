@@ -75,16 +75,16 @@ a:hover, a:focus {
 	background-position: top left, top left;
 	background-repeat: no-repeat;
 	background-size: auto, auto 100%;
-	width: 42px;
-	height: 50px;
+	width: 200px;
+	height: 200px;
 	padding: 0;
 	margin: 0;
 }
 
 @media (max-width: 600px) {
 	.logo {
-		width: 42px;
-		height: 50px;
+		width: 100px;
+		height: 100px;
 	}
 }
 
