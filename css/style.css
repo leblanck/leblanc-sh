@@ -36,8 +36,9 @@ a {
 }
 
 a:hover, a:focus {
-	color: #FFA20C;
-	border-bottom: 1px solid #FFA20C;
+	/* color: #FFA20C; */
+	color: #73786b;
+	border-bottom: 1px solid #73786b;
 }
 
 ::-moz-focus-inner {
