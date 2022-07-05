@@ -135,11 +135,13 @@ a:hover, a:focus {
 .section-bio {
 	-webkit-box-pack: justify;
 	justify-content: space-between;
+	background-color: #73786b;
 }
 
 .col-section {
 	width: 100%;
 	max-width: 382px;
+	background-color: #73786b;
 }
 
 @media (max-width: 600px) {
