@@ -93,6 +93,7 @@ a:hover, a:focus {
 	display: flex;
 	box-sizing: border-box;
 	min-height: 100vh;
+	background-color: #73786b;
 }
 
 @media (max-width: 1024px) {
