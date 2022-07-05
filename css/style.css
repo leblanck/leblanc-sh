@@ -121,6 +121,7 @@ a:hover, a:focus {
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	flex-direction: column;
+	background-color: #73786b;
 }
 
 @media (max-width: 600px) {
@@ -206,6 +207,7 @@ a:hover, a:focus {
 	flex-direction: column;
 	-webkit-box-align: end;
 	align-items: flex-end;
+	background-color: #73786b;
 }
 
 @media (max-width: 1024px) {
