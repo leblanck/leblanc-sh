@@ -9,8 +9,10 @@ html {
 
 body {
 	font: 15px/1.5 "Roboto Mono", Helvetica, sans-serif;
-	color: #ebebea;
-	background: #222222;
+	color: #23231d;
+	/* color: #ebebea; */
+	/* background: #222222; */
+	background: rgb(255, 255, 255);
 	margin: 0;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
