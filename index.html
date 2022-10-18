@@ -4,9 +4,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Kyle LeBlanc - Infrastructure Engineer | Portland, ME | leblanc.sh</title>
+	<title>replit</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack-subset.css">
+	<link rel="stylesheet" href="gh_cal.css" type="text/css"/>
 </head>
 
 <body>
@@ -91,6 +92,11 @@
 		2014 - 2016, Desktop Engineer, <a href="https://www.hhcc.com">Hill Holliday</a></br>
 		2013 - 2013, Junior Systems Admin, <a href="https://www.ll.mit.edu">MIT Lincoln Labs</a></br>
 	</div>
+
+	<!--
+
+	-->
+
 	<div class="line-wrapper">
 		<div class="slant-sm grey">
 			<i class="fa-brands fa-ubuntu fa-sm icon"></i>
@@ -152,6 +158,14 @@
 			:wq
 		</p>
 	</div>
+
+
+
+
+
+	
+
+
 	<div class="line-wrapper">
 		<div class="slant-sm grey">
 			<i class="fa-brands fa-ubuntu fa-sm icon"></i>
@@ -175,7 +189,8 @@
 	<div class="command-line">
 		<i class="fa-solid fa-terminal icon fa-sm"></i><span> ls -la
 	</div>
-	<div class="content-wrapper buffer">
+
+	<div class="content-wrapper">
 		<div class="links-wrapper">
 			<div class="perms">
 				<span>-rw-r--r--</span>
@@ -197,13 +212,54 @@
 				<a href="https://blog.leblanc.sh">blog.html</a>
 				<a href="mailto:kyle@leblanc.sh">email</a>
 				<a href="https://photo.leblanc.sh">photo.jpg</a>
-				<a href="./KL_Resume_2022.pdf">resume.pdf</a>
+				<a href="https://leblanc.sh/KL_Resume_2022.pdf">resume.pdf</a>
 				<a href="https://github.com/leblanck">github.py</a>
 				<a href="https://www.linkedin.com/in/leblanck/">linkedin.html</a>
 			</div>
 		</div>
 	</div>
+
+
+
+			<div class="line-wrapper">
+		<div class="slant-sm grey">
+			<i class="fa-brands fa-ubuntu fa-sm icon"></i>
+		</div>
+		<div class="slant-md-2 blue">
+			<i class="fa-regular fa-folder-open fa-sm icon"></i> /etc/
+		</div>
+		<div class="slant-md green">
+			<i class="fa-brands fa-github-alt fa-sm icon"></i>
+			<i class="fa-solid fa-code-branch fa-sm icon"></i> main <i class="fa-regular fa-arrow-up"></i> 3
+		</div>
+
+		<div class="segment">
+		</div>
+
+		<div class="slant-lg yellow">
+			<i class="fa-solid fa-clock fa-sm icon-right"></i><span class="datewrapper"></span>
+		</div>
+	</div>
+
+	<div class="command-line">
+		<i class="fa-solid fa-terminal icon fa-sm"></i><span> curl -sSL github.com/leblanck
+	</div>
+
+	<div class="content-wrapper">
+		<div class="calendar">
+    <!-- Loading stuff -->
+    Loading the data just for you.
+		</div>
+	</div>
+
+
+	
 	<script src="script.js"></script>
 	<script src="https://kit.fontawesome.com/1a6fbd13c0.js"></script>
+	<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+	<script>
+		GitHubCalendar(".calendar", "leblanck", { responsive: true });
+	</script>
 </body>
+
 </html>
