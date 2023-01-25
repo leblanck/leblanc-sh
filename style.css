@@ -192,7 +192,7 @@ pre {
 .typer {
 	animation: typing 2s steps(25), blink .5s step-end infinite alternate;
 	overflow: hidden;
-	width: 24ch;
+	width: 34ch;
 	border-right: 10px solid;
 	color: var(--font);
 	margin-bottom: 5px;
