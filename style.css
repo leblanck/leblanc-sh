@@ -17,7 +17,7 @@ html, body {
 body {
 	padding-left: 10px;
 	font-family: Hack;
-	font-size: 12px;
+	font-size: 1rem;
 	background-color: var(--bg-dark);
 }
 
@@ -179,4 +179,51 @@ pre {
 	.can-hide {
 		display: none;
 	}
+}
+
+.motd {
+	color: var(--font);
+}
+
+.output {
+	animation: fade 5s;
+}
+
+.typer {
+	animation: typing 2s steps(25), blink .5s step-end infinite alternate;
+	overflow: hidden;
+	width: 24ch;
+	border-right: 10px solid;
+	color: var(--font);
+	margin-bottom: 5px;
+	max-height: 15px;
+}
+
+
+.typer1 {
+	animation: typing 2s steps(25);
+	overflow: hidden;
+	width: 20ch;
+	color: var(--font);
+	max-height: 15px;
+}
+
+.typer-content {
+	color: var(--font);
+}
+
+ 
+@keyframes fade {
+	0% { opacity: 0; }
+	50% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@keyframes typing {
+	0% { width: 0; }
+	100% { width: 24ch; }
+}
+
+@keyframes blink {
+	50% { border-color: transparent; }
 }
