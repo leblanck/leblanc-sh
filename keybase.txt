@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/kyleblanc
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://leblanc.sh
+  * I am kyleblanc (https://keybase.io/kyleblanc) on keybase.
+  * I have a public key ASC7810eDnemx6lI_-VLZ-pqAMNafrV2hD-vLxdI1OLFKAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120bbf35d1e0e77a6c7a948ffe54b67ea6a00c35a7eb576843faf2f1748d4e2c5280a",
+      "host": "keybase.io",
+      "kid": "0120bbf35d1e0e77a6c7a948ffe54b67ea6a00c35a7eb576843faf2f1748d4e2c5280a",
+      "uid": "6254e4ffc505601b699afdae9f1e6119",
+      "username": "kyleblanc"
+    },
+    "merkle_root": {
+      "ctime": 1680272310,
+      "hash": "f7cf01a8c86d36f0915961b680b8ef1e63d189f11823404d23d8667bd1bd5a0715900cf4cb843c73a471632ef91d1237ad38fdf2bf01bea61d10c214ab7ed797",
+      "hash_meta": "290737e09242372d27a461fd1010a16dc1f1474f8d9ebff41f79e4e74bad1ad3",
+      "seqno": 24273792
+    },
+    "service": {
+      "entropy": "ICpDTQnsIf2VmgTvTfrse1nM",
+      "hostname": "leblanc.sh",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.0.4"
+  },
+  "ctime": 1680272370,
+  "expire_in": 504576000,
+  "prev": "b8fcef7e9a8b407f353a7bf3e7a9c93a9d1687f89c0e6ae3163fc9431a0cb480",
+  "seqno": 5,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgu/NdHg53psepSP/lS2fqagDDWn61doQ/ry8XSNTixSgKp3BheWxvYWTESpcCBcQguPzvfpqLQH81Onvz56nJOp0Wh/icDmrjFj/JQxoMtIDEIOyS6FfhNKXvqGKbhsICLUsQttoeDVQL0dKppmEzJ9nFAgHCo3NpZ8RAuIQpbm1RQoFGV+gcHWw5Cqv4CJw9tlki4fMKKQhFb4WDPSJRr7jX/MYQWgsOvgu33eIngXg8NMSDRTMzM+klA6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIP5lMafzqCieM9VB3u/sUNHcnhT0isR8mNLFN8UymNNAo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/kyleblanc
+
+==================================================================
