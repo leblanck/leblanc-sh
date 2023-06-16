@@ -1,4 +1,6 @@
 # leblanc-sh
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e8af8f0b-4f8d-4bc4-9120-62338eedbaca/deploy-status)](https://app.netlify.com/sites/condescending-joliot-9af0aa/deploys)
+
 〰️ Includes all assets for publishing and building leblanc.sh
 
 
