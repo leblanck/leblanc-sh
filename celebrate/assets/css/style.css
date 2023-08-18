@@ -3,6 +3,10 @@
   --cream: #E5D0B9;
   --black: #111D13;
 }
+
+*:focus {
+  outline: none;
+ }
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -891,77 +895,65 @@ body {
     color: var(--cream);
   }
   
-  .contact .php-email-form {
+  .contact form{
     width: 100%;
     background: transparent;
   }
   
-  .contact .php-email-form .form-group {
+  .contact .form-group {
     padding-bottom: 8px;
   }
   
-  .contact .php-email-form .error-message {
-    display: none;
-    color: #fff;
-    background: #ed3c0d;
-    text-align: left;
-    padding: 15px;
-    font-weight: 600;
-  }
   
-  .contact .php-email-form .error-message br+br {
-    margin-top: 25px;
-  }
-  
-  .contact .php-email-form .sent-message {
-    display: none;
-    color: #fff;
-    background: #18d26e;
-    text-align: center;
-    padding: 15px;
-    font-weight: 600;
-  }
-  
-  .contact .php-email-form .loading {
-    display: none;
-    background: var(--cream);
-    text-align: center;
-    padding: 15px;
-  }
-  
-  .contact .php-email-form .loading:before {
-    content: "";
-    display: inline-block;
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    margin: 0 10px -6px 0;
-    border: 3px solid #18d26e;
-    border-top-color: #eee;
-    animation: animate-loading 1s linear infinite;
-  }
-  
-  .contact .php-email-form input,
-  .contact .php-email-form textarea {
-    border-radius: 0;
+  .contact input,
+  .contact textarea,
+  .contact select {
     box-shadow: none;
+    border: 2px solid var(--green);
     font-size: 14px;
   }
   
-  .contact .php-email-form input:focus,
-  .contact .php-email-form textarea:focus {
-    border-color: var(--black);
+  .contact input:focus,
+  .contact textarea:focus {
+    outline: none;
+    border: 2px solid var(--green);
   }
   
-  .contact .php-email-form input {
-    height: 44px;
-  }
-  
-  .contact .php-email-form textarea {
+  .contact textarea {
     padding: 10px 12px;
   }
+
+  .contact label,
+  .contact legend {
+    font-family: 'Playfair Display SC', serif;
+  }
+
+  .contact textarea {
+    min-height: 10rem;
+  }
+
+  .contact select {
+    background: url("../img/down-arrow.svg") no-repeat center right 0.75rem;
+    background-color: #fff;
+  }
+
+  input[type="radio"] {
+    height: 1.25em;
+    width: 1.25em;
+    vertical-align: middle;
+    margin-right: 4px;
+  }
+
+  input[type="radio"] {
+    border-radius: 50%;
+    border: 2px solid var(--green);
+    background-color: var(--cream);
+  }
+  input[type="radio"]:checked {
+    background-color: var(--green);
+  }
   
-  .contact .php-email-form button[type=submit] {
+  .contact button[type=submit] {
     background: var(--cream);
     border: 0;
     padding: 10px 28px;
@@ -971,7 +963,7 @@ body {
     border: 2px solid var(--green);
   }
   
-  .contact .php-email-form button[type=submit]:hover {
+  .contact button[type=submit]:hover {
     background: var(--green);
     color: var(--cream)
   }
