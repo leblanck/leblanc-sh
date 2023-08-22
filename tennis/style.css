@@ -1,0 +1,78 @@
+:root {
+    --green: #9BA087;
+    --cream: #F3F4EE;
+    --black: #141517;
+    --lime: #CCFE08;
+    --white: #FFF;
+  }
+
+  body {
+    background-color: var(--cream);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+  }
+
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Unbounded', cursive;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+
+  section {
+    min-height: 100px;
+  }
+
+  .col {
+    border: 2px solid var(--black);
+    border-radius: 5px;
+    margin: 2px;
+    align-items: center;
+  }
+
+  .review-item {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .fat {
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+
+  .photo {
+    padding-top: 20px;
+    background-color: var(--cream);
+  }
+
+  a {
+    color: var(--black);
+    position: relative;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  a::before {
+    content: '';
+    background-color: var(--lime);
+    position: absolute;
+    left: 0px;
+    bottom: 3px;
+    width: 100%;
+    height: 8px;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+  }
+
+  a:hover::before {
+    bottom: 0;
+    height: 100%;
+  }
+
+
