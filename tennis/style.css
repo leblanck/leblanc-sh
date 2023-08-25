@@ -50,6 +50,10 @@
     background-color: var(--cream);
   }
 
+  .photo img {
+    margin-bottom: 10px;
+  }
+
   a {
     color: var(--black);
     position: relative;
