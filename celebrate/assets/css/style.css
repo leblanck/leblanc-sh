@@ -731,6 +731,7 @@ body {
   .cta {
     background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.8)), url("../img/cta.jpg") center center;
     background-size: cover;
+    min-height: 400px;
     padding: 60px 0;
   }
   
