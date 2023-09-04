@@ -987,3 +987,7 @@ body {
     font-size: 14px;
     background: var(--cream);
   }
+
+  .heart {
+    color: #982649;
+  }
