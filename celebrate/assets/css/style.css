@@ -968,6 +968,11 @@ body {
     background: var(--green);
     color: var(--cream)
   }
+
+
+  .important-date {
+    color: #982649;
+  }
   
   @keyframes animate-loading {
     0% {
