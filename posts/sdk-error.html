@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="../styles.css">
+        <script src="https://kit.fontawesome.com/1a6fbd13c0.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav>
+            <div class="header">
+                <span class="title-link">
+                    <a class="internal-link plain" href="../index.html">LeBlanc Engineering</a>
+                </span>
+                <span class="about-link">
+                    <a class="plain muted" href="../about.html">About</a>
+                </span>
+            </div>
+        </nav>
+        <div>
+            <main>
+                <article>
+                    <div>
+                        <h1>SDK .NET Error When Creating New UE4 C++ Project</h1>
+                        <table class="article-table">
+                            <tbody>
+                                <tr>
+                                    <td class="muted">Date</td>
+                                    <td>08/26/2021</td>
+                                </tr>
+                                <tr>
+                                    <td class="muted">Tags</td>
+                                    <td>
+                                        <a href="" class="tag">UE4</a>
+                                        <a href="" class="tag">.NET</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <p>I recently began learning to use Unreal Engine and Blender to attempt to create some small indie games/game mods/etc. I ran into this issue early on and wanted to spread the solution love.</p>
+                        <div class="image-wrapper">
+                            <div class="image-bar">
+                                <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 4"/>
+                        </svg>
+                                <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 4"/>
+                        </svg>
+                                <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 4"/>
+                        </svg>
+                            </div>
+                            <img src="./img/sdk-error.png" width="500px"/>
+                        </div>
+
+                        <h2>Problem</h2>
+                        <p>This may be a simple problem, but it stumped me for quite a while when creating my first C++ based prject in Unreal Engine 4. I continued to receive the above error regardless of how I thought I had installed VS, updated UE4, re-installed both, etc.</p>
+                        <pre><code>An Error occrued while trying to generate project files.
+Running G:/EpicGames/UE_4.26/Engine?Binaries/DotNET/UnrealBuildTool.exe -projectfiles -project="" -game -rocket -progress. Discovering modules, targets, and source code for project...
+ERROR: Could not find NetFxSDK install dir; this will prevent SwarmInterface from installing. Install a version of .NET Framework SDK at 4.6.0 or higher.</code></pre>
+
+                            <p>Turns out all I needed was a fresh install of the .NET SDK. (duh)</p>
+
+                            <h2>Solution</h2>
+                            <div class="image-wrapper">
+                                <div class="image-bar">
+                                    <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 4"/>
+                            </svg>
+                                    <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 4"/>
+                            </svg>
+                                    <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 4"/>
+                            </svg>
+                                </div>
+                                <img src="./img/sdk-solution.png" width="500px"/>
+                            </div>
+
+                            <p>The solution to this issue happens to be an outdated (or missing) version of .NET & the .NET SDK Framework. To update this you can follow the below instructions:</p>
+                            <ol>
+                                <li>Launch Microsoft Visual Studio Installer</li>
+                                <li>Next to your installed version of VS select Modify</li>
+                                <li>Select the 'Individual Components' Tab and mark the checkbox next to the latest version of the .NET SDK</li>
+                            </ol>
+                    </div>
+                </article>  
+            </main>
+            <footer>
+                <div class="footer-container">
+                    <a href="../index.html" class="plain muted logo"><img src="../img/orange-k.png"></a>
+                    <a href="https://github.com/leblanck" class="external-link">Github</a>
+                    <a href="mailto:kyle@leblanc.sh" class="external-link">Email</a>
+                </div>
+                <div>
+                    <p>&copy; 2025 - Made with <span class="fa-solid fa-heart span-green"></span> in Maine. </p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

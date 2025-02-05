@@ -3,5 +3,4 @@
 
 〰️ Includes all assets for publishing and building leblanc.sh
 
-
-![](https://i.imgur.com/iAXmrHZ.png)
+Push to Master -> Build/Publish New Docker Image -> Hosted on Digital Ocean

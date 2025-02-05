@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="../styles.css">
+        <script src="https://kit.fontawesome.com/1a6fbd13c0.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav>
+            <div class="header">
+                <span class="title-link">
+                    <a class="internal-link plain" href="../index.html">LeBlanc Engineering</a>
+                </span>
+                <span class="about-link">
+                    <a class="plain muted" href="../about.html">About</a>
+                </span>
+            </div>
+        </nav>
+        <div>
+            <main>
+                <article>
+                    <div>
+                        <h1>Understanding High-Level Kubernetes</h1>
+                        <table class="article-table">
+                            <tbody>
+                                <tr>
+                                    <td class="muted">Date</td>
+                                    <td>11/03/2022</td>
+                                </tr>
+                                <tr>
+                                    <td class="muted">Tags</td>
+                                    <td>
+                                        <a href="" class="tag">k8s</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h2>K8S, K3S, Minicube, Oh My!</h2>
+
+                        <p>After getting a bit of practice with Docker and containerization technology in general, I figured it was time to take a swing at learning Kubernetes (k8s). This is a crazy deep topic. It would require an entire blog to talk about all of k8s most likely. That is not what this is for. This is my high-level understanding of how the most basic parts of a k8s cluster operate.</p>
+                        <p>I find that I get a great benefit when trying to learn new topics by writing about it. That could be via notes, a blog post, drawing a chart/diagram etc.</p>
+
+
+                        <div class="image-wrapper">
+                            <div class="image-bar">
+                                <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 4"/>
+                        </svg>
+                                <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 4"/>
+                        </svg>
+                                <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 4"/>
+                        </svg>
+                            </div>
+                            <img src="./img/k8s_high_level_architecture-1.png" width="500px"/>
+                        </div>
+
+                        <h2>Server</h2>
+                        <p>This piece is <em>technically</em> optional. In a cloud-native environment this is required, but in either a home-lab or on-prem environment it is not necessary. By 'not necessary' I mean that if you do not wish to have each of your Nodes running as a VM you could run each one on bare metal instead. (I am thinking of somehting like a Raspberry Pi Cluster). Of course you could also just have a single piece of hardware running multiple VMs in any environment.</p>
+                        <p>In a cloud-native production environment this would be made up of whatever hardware is running in your chose cloud provider.</p>
+
+                        <h2>Nodes</h2>
+                        <p>Our nodes are our VM instances. Typically Linux based. They can also be bare metal as mentioned above in an on-prem or Raspberry Pi cluster, etc. Nodes are responsible for running our pods. Each node can have upwards of ~500 pods IIRC.</p>
+
+                        <h2>Pods</h2>
+                        <p>Pods are the heart of our k8s cluster. They contain our running containers which contain our application images. They are made up of a storage component and a networking component in addition to our container itself.</p>
+
+                        <h2>Control Plane (Master)</h2>
+                        <p>The control plane is typically a VM or other Linux machine that runs our commands for managing our k8s cluster. It contains all of the processes listed below.</p>
+
+                        <h2>API</h2>
+                        <p>The kube-apiserver exposes a JSON request formatted REST API. This is the only piece of this process that users will interact with. This accepts any command from kubectl example and then sends it down the chain for k8s to handle the request.</p>
+
+                        <h2>Scheduler</h2>
+                        <p>The kube-scheduler works to select a node for pods to be deployed to based on many various factors, which are out of the scope of being 'high-level'</p>
+
+                        <h2>Controller</h2>
+                        <p>The kube-controller-manager watches for changes to pods and nodes. It works to maintain the user-defined desired state.</p>
+
+                        <h2>etcd</h2>
+                        <p>etcd is a backing store for our cluster data. It is an open-source, disrtibuted key-value store. It can be swapped out for other storage platforms like MySQL, MongoDB, etc but I don't believe this is very common.</p>
+
+                        <h2>Kubelet</h2>
+                        <p>The kubelet agent runs on each node, including the master node. The kubelet agents communitcate with each other to report node status. It works in conjunction with the container runtime to run containers on each node.</p>
+
+                        <h2>Container Runtime</h2>
+                        <p>The container runtime operates on each node to handle all running containers within each pod. This runtime can be docker, containerd, cri-o, etc.</p>
+                    </div>
+                </article>  
+            </main>
+            <footer>
+                <div class="footer-container">
+                    <a href="../index.html" class="plain muted logo"><img src="../img/orange-k.png"></a>
+                    <a href="https://github.com/leblanck" class="external-link">Github</a>
+                    <a href="mailto:kyle@leblanc.sh" class="external-link">Email</a>
+                </div>
+                <div>
+                    <p>&copy; 2025 - Made with <span class="fa-solid fa-heart span-green"></span> in Maine. </p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

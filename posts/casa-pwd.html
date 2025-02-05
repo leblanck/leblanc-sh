@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="../styles.css">
+        <script src="https://kit.fontawesome.com/1a6fbd13c0.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav>
+            <div class="header">
+                <span class="title-link">
+                    <a class="internal-link plain" href="../index.html">LeBlanc Engineering</a>
+                </span>
+                <span class="about-link">
+                    <a class="plain muted" href="../about.html">About</a>
+                </span>
+            </div>
+        </nav>
+        <div>
+            <main>
+                <article>
+                    <div>
+                        <h1>Changing CasaOS Password With No GUI</h1>
+                        <table class="article-table">
+                            <tbody>
+                                <tr>
+                                    <td class="muted">Date</td>
+                                    <td>10/27/2022</td>
+                                </tr>
+                                <tr>
+                                    <td class="muted">Tags</td>
+                                    <td>
+                                        <a href="" class="tag">CasaOS</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h2>GUIs are nice, but are not always needed.</h2>
+                        <p>I recently began using <a href="https://casaos.io/" class="external-link">CasaOS</a> to help provide a clean and nice user interface for my main server at home running Ubuntu 22.04. It helps manage all of my running Docker containers and the app store it provides makes spinning up new 'pre-made' apps super easy.</p>
+
+                        <p>With that being said, it is OSS and there are some flaws. One of which, IMO, is the lack of ability to change your account password. I ran into this today. I must not have saved my password correctly in 1Password and it was lost. Couldn't sign in to save my life. I was not able to find a way via the GUI or using any CLI tools to change my default account password or to create a new user account altogether.</p>
+
+                        <p>This was a problem. I found a DIY solution.</p>
+                        <p>After doing some digging around on the <a href="https://github.com/IceWhaleTech/CasaOS" class="external-link">CasaOS Github</a> and on my local install, I was able to do a little reverse engineering and found out the users are stored in a sqlite database in <span class="highlight">/var/lib/casaos/db/user.db</span> Dumping the output of this single table resulted in something like this:</p>
+                        <pre><code>sqlite> .dump
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE `o_users` (`id` integer,`username` text,`password` text,`role` text,`email` text,`nickname` text,`avatar` text,`description` text,`created_at` datetime,`updated_at` datetime,PRIMARY KEY (`id`));
+INSERT INTO o_users VALUES(1,'kyleblanc','c86f81d2478d30c0b3375ad2ddfe3e61','admin','','','','','2022-10-27 13:06:18.386537799-04:00',NULL);
+COMMIT;
+sqlite> .exit</code></pre>
+                        
+                        <p>You can clearly see that my lost password was stored here in a text field but it has been run through an MD5 hash. Not helpful, but good to know.</p>
+                        <p>I can't undo an MD5 hash (for the most part). But, I can <em></em>replace</em> an MD5 hash.</p>
+
+                        <p>I came up with a new password and then created a new MD5 hash for it. With this new hash, I made a new sqlite database with the same table name and all of the same keys etc. The only difference was that I replaced the old hash with my new hashed password. I made sure the owner/groups/permissions matches the existing database and then backed up the old one and moved in the new one.</p>
+
+                        <pre><code>var/lib/casaos/db
+❯ ls -la
+total 60
+drwxrwxrwx 2 root root  4096 Oct 27 17:52 .
+drwxr-xr-x 6 root root  4096 Oct 27 13:37 ..
+-rw-r--r-- 1 root root 32768 Oct 27 13:04 casaOS.db
+-rw-r--r-- 1 root root  8192 Oct 27 13:06 user.db.backup
+-rw-r--r-- 1 root root  8192 Oct 27 17:52 users.db</code></pre>
+
+                            <p>I then restarted my server, went back to the CasaOS landing page, entered my new password, prayed... BOOM. It worked. Just as I planned lol.</p>
+                            <p>These seems a little convoluted and like it was a hassel. The longest part was the reverse engineering of figuring out where the db was located, what the fields were etc. I think it would make sense to implement a feature in the CasaOS GUI to change user passwords, if it exists and I missed it, well then shame on me. If it doesn't actually exist... I see a PR in my future once I learn more Go...</p>
+                    </div>
+                </article>  
+            </main>
+            <footer>
+                <div class="footer-container">
+                    <a href="../index.html" class="plain muted logo"><img src="../img/orange-k.png"></a>
+                    <a href="https://github.com/leblanck" class="external-link">Github</a>
+                    <a href="mailto:kyle@leblanc.sh" class="external-link">Email</a>
+                </div>
+                <div>
+                    <p>&copy; 2025 - Made with <span class="fa-solid fa-heart span-green"></span> in Maine. </p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
