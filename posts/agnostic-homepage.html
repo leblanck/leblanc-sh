@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>LeBlanc Engineering | Viewing Configuration Profiles in Terminal</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="LeBlanc Engineering is a blog and personal website dedicated to computer science, design, learning, and technology.">
+        <link rel="stylesheet" href="../styles.css">
+        <script src="https://kit.fontawesome.com/1a6fbd13c0.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav>
+            <div class="header">
+                <span class="title-link">
+                    <a class="internal-link plain" href="../index.html">LeBlanc Engineering</a>
+                </span>
+                <span class="about-link">
+                    <a class="plain muted" href="../about.html">About</a>
+                </span>
+            </div>
+        </nav>
+        <div>
+            <main>
+                <article>
+                    <div>
+                        <h1>Creating a Custom Homepage that is Browser Agnostic</h1>
+                        <table class="article-table">
+                            <tbody>
+                                <tr>
+                                    <td class="muted">Date</td>
+                                    <td>08/12/2022</td>
+                                </tr>
+                                <tr>
+                                    <td class="muted">Tags</td>
+                                    <td>
+                                        <a href="" class="tag">Web</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h2>If only there was a way to get my homepage to be consistent over every browser on every platform...</h2>
+                        <p><span class="highlight">TL/DR;</span> I created a "clone" of my Tabliss extension New Tab/Homepage setup so that I can use it on any browser on any device. I simply set my browser settings for these changes to point to: <a href="https://home.leblanc.sh" class="external-link">home.leblanc.sh</a>. It is very simple, but not all solutions to problems need to be complex.</p>
+
+                        <div class="image-wrapper">
+                            <div class="image-bar">
+                                <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 4"/>
+                        </svg>
+                                <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 4"/>
+                        </svg>
+                                <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 4"/>
+                        </svg>
+                            </div>
+                            <img src="./img/browser.png" width="500px"/>
+                        </div>
+                        <p>For a long time I had been using the Tabliss extension for Firefox when I was using that as my default browser. I switched back to Safari as my primary browser on macOS which is what I am using 98% of the time. I still use FF when on my Ubuntu box (when not using Min) but I wanted a consistent experience that I could create regardless if I were using Firefox on Ubuntu, Safari on macOS/iOS, or Edge on Windows. (The same theory goes for my bookmarks as well, which is why I recently moved all my bookmarks over to <a href="https://raindrop.io" class="external-link">Raindrop.io</a>)</p>
+                        <p>I love the Tabliss extension. It makes customizing your new tab page so easy and clean, if only they supported more browsers! This is not the case however, so that means I wanted to create my own version.</p>
+                        <p>The way I saw it I had 2 options:</p>
+
+                        <ol>
+                            <li>Develop a new browser extension that is cross-compatible with all the browsers I use. (unlikely)</li>
+                            <li>Write a simple HTML/CSS/JS Homepage and host is on a leblanc.sh subdomain that I can point my browsers to. (Ta-Da!)</li>
+                        </ol>
+                        <p>I decided to go with option 2 (obviously). I was able to spin this up in ~2 hours. I started by going to my Tabliss page in Firefox and desiging it how I liked and used this as a design starting point to create my own page.</p>
+
+                        <p>What made this extra easy was to use my existing Netlify setup. I created a new site  project and linked it to my newly created GitHub repo for this project. I also use Netlify to manage my DNS records for the leblanc.sh domain so at this time I alse created a new subdomain for this project.</p>
+                        <p>I added all of my web files from my local machine to that GH repo, pushed to main, and boom - home.leblanc.sh was live!</p>
+
+                        <p>All that was left was to change the settings on all of my browsers to point to this new site for their Homepage/New Tab configurations.</p>
+                        <p>Hopefully someone can find this helpful in the future. I linked to the repo for this homepage above. This project cost me a total of $0 to setup and make live. It has made my browser experience uniform across platforms.</p>
+
+                    </div>
+                </article>  
+            </main>
+            <footer>
+                <div class="footer-container">
+                    <a href="../index.html" class="plain muted logo"><img src="../img/orange-k.png"></a>
+                    <a href="https://github.com/leblanck" class="external-link">Github</a>
+                    <a href="mailto:kyle@leblanc.sh" class="external-link">Email</a>
+                </div>
+                <div>
+                    <p>&copy; 2025 - Made with <span class="fa-solid fa-heart span-green"></span> in Maine. </p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

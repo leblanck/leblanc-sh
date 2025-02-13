@@ -1,10 +1,19 @@
-:root {
+/* :root {
     --dark: rgb(35, 58, 57);
     --light: rgb(211, 215, 200);
     --medium: rgba(158, 176, 136, 0.8);
     --border: rgba(158, 176, 136, 0.2);
     --blue: #62aba4;
     --hover: hsla(182, 84%, 32%, 0.1);
+} */
+
+:root {
+    --light: #5A554C;
+    --dark: #D2CEC4;
+    --medium: rgba(194, 196, 113, 0.8);
+    --border: rgba(175, 176, 136, 0.2);
+    --yellow: #F4F445;
+    --hover: hsla(61, 84%, 32%, 0.354);
 }
 
 ::selection {
@@ -84,7 +93,7 @@ a {
 }
 
 a:hover {
-    color: var(--blue);
+    color: var(--yellow);
     background-color: var(--hover);
     border-radius: 4px;
 }
@@ -97,11 +106,11 @@ a.plain {
 }
 
 .muted {
-    color: var(--medium)
+    color: var(--yellow)
 }
 
 a.muted:hover {
-    color: var(--blue)
+    color: var(--yellow)
 }
 
 a.logo {
@@ -109,18 +118,18 @@ a.logo {
 }
 
 .tag {
-    border: 1px solid var(--border);
+    border: 1px solid var(--yellow);
     padding: 0.1em 0.5em 0.15em;
     border-radius: 1em;
     font-size: 0.8em;
-    color: var(--medium);
+    color: var(--yellow);
     line-height: 2;
     text-decoration: none;
 }
 
 .tag:hover {
     border-radius: 1em;
-    border-color: var(--blue)
+    border-color: var(--yellow)
 }
 
 h2 {
@@ -158,7 +167,7 @@ td {
 .footer-container {
     display: flex;
     align-items: center;
-    color: var(--border);
+    color: var(--yellow);
 }
 
 footer a{
@@ -171,14 +180,14 @@ footer img {
 
 footer p {
     font-size: 0.6em;
-    color: var(--medium)
+    color: var(--yellow)
 }
 
 
 pre {
     background: var(--light);
-    border: 2px solid var(--blue);
-    border-left: 8px solid var(--blue);
+    border: 2px solid var(--yellow);
+    border-left: 8px solid var(--yellow);
     border-radius: 4px;
     color: var(--dark);
     page-break-inside: avoid;
@@ -201,22 +210,22 @@ article img {
 	width: 80%;
 	display: flex;
 	flex-direction: column;
-	border: 2px solid var(--border);
-	box-shadow: 6px 6px var(--border);
+	border: 2px solid var(--light);
+	box-shadow: 6px 6px var(--light);
 }
 
 .image-bar {
 	padding: 2px;
-	border-bottom: 2px solid var(--border);
+	border-bottom: 2px solid var(--light);
 	height: 20px;
 	display: flex;
 }
 
 .image-bar svg {
-    color: var(--border);
+    color: var(--light);
 }
 
 .highlight {
-    background-color: var(--medium);
-    color: var(--dark);
+    background-color: var(--yellow);
+    color: var(--light);
 }
