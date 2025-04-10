@@ -229,3 +229,28 @@ article img {
     background-color: var(--yellow);
     color: var(--light);
 }
+
+.copy-button {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+button svg {
+	background: transparent;
+	color: var(--yellow);
+	transition: 2s;
+}
+
+.success {
+    transition: 0.3s;
+  /* 	filter: drop-shadow(0 0 12px green); */
+  }
+  
+  .success svg {
+      color: var(--yellow);
+  }
