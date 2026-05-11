@@ -22,8 +22,11 @@
     --medium: rgba(194, 196, 113, 0.8);
     --border: rgba(175, 176, 136, 0.2);
     --blue: #1AB5CD;
-    --yellow: #ED1C24;
-    --hover: hsla(0, 84%, 32%, 0.354);
+    /* --yellow: #ED1C24; */
+    --yellow: #CCFE08;
+    /* --hover: hsla(0, 84%, 32%, 0.354); */
+    --hover: hsla(113, 40%, 42%, 0.354);
+
 }
 
 ::selection {
@@ -103,7 +106,7 @@ footer {
 }
 
 .external-link {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='2.5' stroke='%23ED1C24' opacity='0.6' class='w-6 h-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25' /%3E%3C/svg%3E%0A");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='2.5' stroke='%239f0' opacity='0.6' class='w-6 h-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25' /%3E%3C/svg%3E%0A");
     background-position: right 33%;
     background-repeat: no-repeat;
     background-size: 0.7em;
@@ -260,7 +263,7 @@ article img {
 }
 
 .highlight {
-    background-color: var(--blue);
+    background-color: var(--yellow);
     color: var(--dark)  !important;
     padding: 0px 2px 0px 2px;
 }
@@ -278,7 +281,7 @@ article img {
 
 button svg {
 	background: transparent;
-	color: var(--blue) !important;
+	color: var(--yellow) !important;
 	transition: 2s;
 }
 

@@ -75,8 +75,12 @@ function getGradientHexValues(startHex, endHex, steps) {
   return hexArray;
 }
 
-const startColor = '#ED1C24'; // red
-const endColor = '#1AB5CD';// bright blue
+
+const startColor = '#CCFE08'; // red
+const endColor = '#FAEAD6';// bright blue
+
+// const startColor = '#ED1C24'; // red
+//const endColor = '#1AB5CD';// bright blue
 
 //const startColor = '#006FFF'; //blue
 //const endColor = '#50DDB0'; // green
